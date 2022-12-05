@@ -1,0 +1,14 @@
+MACRO
+ XYZ &A=P, &B=Q, &C
+ READ &A
+ ADD &B, =5
+ PRINT &C
+MEND
+MACRO
+ PQR &D, &E=Z, &F
+ PRINT &D
+ MOVER &E, &F
+MEND
+START
+XYZ &C=N
+END
